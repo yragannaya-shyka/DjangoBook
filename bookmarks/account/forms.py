@@ -11,7 +11,6 @@ class UserRegistrationForm(forms.ModelForm):
     password = forms.CharField(label='Password',
                                widget=forms.PasswordInput)
     password2 = forms.CharField(label='Repeat password',
-<<<<<<< HEAD
                                 widget=forms.PasswordInput)
 
     class Meta:
@@ -23,6 +22,3 @@ class UserRegistrationForm(forms.ModelForm):
             if cd['password'] != cd['password2']:
                 raise forms.ValidationError('Password don\'t math.')
             return cd['password2']
-=======
-                                widget=forms.PasswordInput)
->>>>>>> da0901515e7eea1d566c271e07bb23459c595b93
